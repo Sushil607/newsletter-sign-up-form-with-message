@@ -45,12 +45,13 @@
           <div class="form-control">
             <div class="label-error">
               <label for="companyEmail">Email address</label>
-              <div id="errorMessage">Email can't be empty!</div>
+              <div id="errorMessage"></div>
             </div>
             <input
               type="text"
               id="companyEmail"
               placeholder="email@company.com"
+              autocomplete="off"
             />
           </div>
           <button type="submit" class="subscribe-btn">
@@ -70,7 +71,7 @@
       />
     </div>
     <!-- Success Message Container -->
-    <div class="success-message-container" style="display: none">
+    <div class="success-message-container">
       <img src="./assets/images/icon-success.svg" alt="success icon" />
       <h1>Thanks for subscribing!</h1>
       <p>

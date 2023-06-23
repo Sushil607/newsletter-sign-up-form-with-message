@@ -144,6 +144,12 @@ label{
     border: 1px solid var(--neutral-grey);
 }
 
+.error-style{
+    background-color: #FFE8E6 !important;
+    border: 1px solid var(--primary-tomato) !important;
+    color: var(--primary-tomato) !important;
+}
+
 .subscribe-btn,.dismiss-btn{
     background-color: var(--neutral-dark-slate-grey);
 }
@@ -164,6 +170,7 @@ label{
     background-color: var(--white);
     border-radius: 20px;
     padding: 1.8rem;
+    display: none;
 }
 
 .success-message-container h1{
