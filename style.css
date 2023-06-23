@@ -24,20 +24,191 @@
 }
 
 body{
+    min-height: 100vh;
+    background-color: var(--neutral-dark-slate-grey);
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
 }
 
 button{
     cursor: pointer;
+    height: 42px;
+    width: 100%;
     border: none;
+    border-radius: 6px;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
+    color: var(--white);
 }
 
 /**
 * ! Typography
 **/
 
+h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--neutral-dark-slate-grey);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--neutral-charcoal-grey);
+}
+
+.label-error{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+label{
+    color: var(--neutral-charcoal-grey);
+}
+
+#errorMessage{
+    color: var(--primary-tomato);
+}
+
+#validatedEmail{
+    font-weight: 700;
+    color: var(--neutral-dark-slate-grey);
+}
+
 /**
 * ! Components
 **/
+
+.newsletter-sign-up-container{
+    height: 80vh;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1.2rem;
+    width: 800px;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-sign-up-text{
+    flex: 7;
+    padding: 2rem 1rem;
+}
+
+.newsletter-sign-up-text .subtext{
+    margin: 1.4rem 0;
+}
+
+.newsletter-sign-up-text ul{
+    margin: 1.2rem 0;
+}
+
+.newsletter-sign-up-text ul li{
+    margin: 0.6rem 0;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#newsletter-sign-up-form{
+    margin: 1rem 0;
+}
+
+#newsletter-sign-up-form .label-error{
+    margin-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newsletter-sign-up-form .form-control{
+    margin: 0.8rem 0;
+}
+
+#newsletter-sign-up-form #companyEmail{
+    height: 42px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 14px;
+    border: 1px solid var(--neutral-grey);
+}
+
+.subscribe-btn,.dismiss-btn{
+    background-color: var(--neutral-dark-slate-grey);
+}
+
+.newsletter-sign-up-illustration-desktop{
+    border-radius: 6px;
+    flex: 5;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-sign-up-illustration-mobile{
+    display: none;
+}
+
+.success-message-container{
+    width: 400px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1.8rem;
+}
+
+.success-message-container h1{
+    margin-top: 1.4rem;
+    line-height: 2.6rem;
+}
+
+.success-message-container p{
+    margin: 1.4rem 0;
+}
+
+.dismiss-btn:hover{
+    background:linear-gradient(to bottom right,#FE5479,#FF693E);
+    box-shadow: 4px 4px 12px #FFC9C5;
+}
+
+/**
+* ! Media Queries
+**/
+
+@media(max-width:768px){
+    .newsletter-sign-up-container{
+        height: 90vh;
+        width: 90%;
+        gap: 20px;
+    }
+}
+
+@media(max-width:425px){
+    body{
+        background-color: white;
+    }
+    .newsletter-sign-up-illustration-desktop{
+        display: none;
+    }
+    .newsletter-sign-up-illustration-mobile{
+        display: block;
+    }
+    .newsletter-sign-up-container{
+        min-height:140vh;
+        padding: 0;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 0px;
+    }
+}

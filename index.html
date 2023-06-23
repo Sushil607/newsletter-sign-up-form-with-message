@@ -24,7 +24,9 @@
     <div class="newsletter-sign-up-container">
       <div class="newsletter-sign-up-text">
         <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <p class="subtext">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
         <ul class="newsletter-features-list">
           <li>
             <img src="./assets/images/icon-list.svg" alt="list icon" />
@@ -41,9 +43,9 @@
         </ul>
         <form id="newsletter-sign-up-form">
           <div class="form-control">
-            <div>
+            <div class="label-error">
               <label for="companyEmail">Email address</label>
-              <p id="error-message">Email can't be empty!</p>
+              <div id="errorMessage">Email can't be empty!</div>
             </div>
             <input
               type="text"
@@ -51,23 +53,30 @@
               placeholder="email@company.com"
             />
           </div>
-          <button class="subscribe-btn">Subscribe to monthly newsletter</button>
+          <button type="submit" class="subscribe-btn">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </div>
-      <div class="newsletter-sign-up-illustration">
-        <img
-          src="./assets/images/illustration-sign-up-desktop.svg"
-          alt="illustration"
-        />
-      </div>
+      <img
+        src="./assets/images/illustration-sign-up-desktop.svg"
+        class="newsletter-sign-up-illustration-desktop"
+        alt="illustration image desktop"
+      />
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        class="newsletter-sign-up-illustration-mobile"
+        alt="illustration image mobile"
+      />
     </div>
     <!-- Success Message Container -->
-    <div class="success-message-container">
+    <div class="success-message-container" style="display: none">
       <img src="./assets/images/icon-success.svg" alt="success icon" />
       <h1>Thanks for subscribing!</h1>
       <p>
-        A confirmation email has been sent to <span></span>. Please open it and
-        click the button inside to confirm your subscription.
+        A confirmation email has been sent to
+        <span id="validatedEmail">ash@loremcompany.com</span>. Please open it
+        and click the button inside to confirm your subscription.
       </p>
       <button class="dismiss-btn">Dismiss message</button>
     </div>
