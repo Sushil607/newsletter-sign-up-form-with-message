@@ -28,12 +28,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Design](./screenshots/desktop-design.png)
+![Desktop active state](./screenshots/desktop-active-state.png)
+![Desktop success state](./screenshots/desktop-success-state.png)
+![Mobile Design](./screenshots/mobile-design.png)
+![Mobile active state](./screenshots/mobile-active-state.png)
+![Mobile success state](./screenshots/mobile-success-state.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify URL here](https://newsletter-sign-up-form-with-message.netlify.app/)
 
 ## My process
 
@@ -43,7 +48,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ## Author
 
