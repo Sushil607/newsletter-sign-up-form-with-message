@@ -37,7 +37,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Netlify URL here](https://newsletter-sign-up-form-with-message.netlify.app/)
 
 ## My process
