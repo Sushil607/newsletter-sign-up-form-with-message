@@ -20,7 +20,57 @@
     </title>
   </head>
   <body>
-    <p>test</p>
+    <!-- Newsletter Sign Up Container -->
+    <div class="newsletter-sign-up-container">
+      <div class="newsletter-sign-up-text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="newsletter-features-list">
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="list icon" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="list icon" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="list icon" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+        <form id="newsletter-sign-up-form">
+          <div class="form-control">
+            <div>
+              <label for="companyEmail">Email address</label>
+              <p id="error-message">Email can't be empty!</p>
+            </div>
+            <input
+              type="text"
+              id="companyEmail"
+              placeholder="email@company.com"
+            />
+          </div>
+          <button class="subscribe-btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="newsletter-sign-up-illustration">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration"
+        />
+      </div>
+    </div>
+    <!-- Success Message Container -->
+    <div class="success-message-container">
+      <img src="./assets/images/icon-success.svg" alt="success icon" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <span></span>. Please open it and
+        click the button inside to confirm your subscription.
+      </p>
+      <button class="dismiss-btn">Dismiss message</button>
+    </div>
   </body>
   <!-- JavaScript -->
   <script src="./index.js"></script>
